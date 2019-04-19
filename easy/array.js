@@ -49,35 +49,8 @@ var twoSum = function (nums, target) {
     }
     return [i, j];
 }
-
-var twoSum = function(nums, target) {
-    let hash = {};
-    let i = nums.length;
-
-    while (i--) {
-        let val = nums[i];
-        if (hash[target - val]) {
-            
-            return [i, hash[target - val]];
-        }
-        hash[val] = i;
-    }
-
-
-};
-
-/**
- * @param {number[]} nums
- * @return {void} Do not return anything, modify nums in-place instead.
- */
-var moveZeroes = function(nums) {
-    let p = 0;
-    for (let i = 0; i < nums.length; i++) {
-        if (nums[i] != 0) {
-            nums[p++] = nums[i];
-        }
-    }
-    for (let i = p; i < nums.length; i++) {
-        nums[i] = 0;
-    }
-};
+// var a = [1,1,2];
+// removeDuplicates(a);
+var arr = [-3, 4, 3, 90];
+var bb = twoSum(arr, 0);
+console.log(bb);

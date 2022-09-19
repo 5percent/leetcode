@@ -1,3 +1,9 @@
+/**
+ * 获取n以内的质数
+ * 
+ * @param {Number} n 边界 
+ * @returns {Array} 从0-n的质数集合
+ */
 function getPrime(n) {
     if (n <= 1) {
         return [];
@@ -20,6 +26,12 @@ function getPrime(n) {
     return arr;
 }
 
+/**
+ * 找出最大的质数约数
+ * 
+ * @param {Number} product 
+ * @returns 
+ */
 function getPrimeProduct(product) {
     let center = Math.ceil(Math.sqrt(product));
     let primeArr = getPrime(center);
